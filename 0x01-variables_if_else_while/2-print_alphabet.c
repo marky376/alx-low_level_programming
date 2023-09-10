@@ -1,18 +1,23 @@
-#include <stdio.h>
 
+#include <stdio.h>
 /**
- * main - main function
+ * main -main function
  *
  * Return:always 0
  */
 
-int main(void);
+
+int main(void)
 {
-	char = i;
+    char i  = 'a';
 
-	for (i = 'b'; i <= 'f'; i++)
-		putchar(i);
-	putchar('\n');
-	return (0);
+    while (i <= 'z')
+    {
+        putchar(i);
+        i++;
+    }
 
+    putchar('\n');
+
+    return 0;
 }
