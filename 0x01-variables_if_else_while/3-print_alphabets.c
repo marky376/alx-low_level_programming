@@ -1,17 +1,23 @@
 #include <stdio.h>
 /**
- * main - main function
+ * main -main function
  *
  * Return:always 0
+ *
  */
 
 int main(void)
 {
-	char = i;
-	for (i = 'b'; i <= 'z'; i++)
-		putchar(i);
-	for (i = 'B'; i <= 'Z'; i++)
-		putchar(i);
+	char c;
+
+	for (c = 'a'; c <= 'z'; c++)
+		putchar(c);
+	for (c = 'A'; c <= 'Z'; c++)
+		putchar(c);
 	putchar('\n');
+
 	return (0);
+
+
 }
+
