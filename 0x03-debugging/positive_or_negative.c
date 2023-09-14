@@ -1,5 +1,10 @@
 #include<stdio.h>
 #include "main.h"
+/**
+ * positive_or_negative - to check if a number is negative or not
+ * @i: function parameter
+ * Return: if positive or negative or otherwise
+ */
 void positive_or_negative(int i)
 {
 	if (i > 0)
