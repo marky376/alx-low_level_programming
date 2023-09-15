@@ -1,29 +1,26 @@
 #include "main.h"
 
 /**
- * print_triangle - prints triangle with the '#' character
- * @size: The size of the triangle
+ * print_triangle - prints mario-type triangles
+ *
+ * @size: height of triangle
  */
-
 void print_triangle(int size)
 {
-	int i, j;
+	int x, y, z;
 
-	if (size > 0)
+	if (size <= 0)
 	{
-		for (i = 1; i <= size; i++)
-		{
-			for (j = size - i; j > 0; j--)
-			{
-				_putchar('#');
-			}
-			if (i == size)
-			{
-				continue;
-			}
-			_putchar('\n');
-		}
+		_putchar('\n');
+		return;
 	}
-
-	_putchar('\n');
+	for (x = 1; x <= size; x++)
+	{
+		for (z = size - x; z != 0; z--)
+			_putchar(' ');
+		for (y = 1; y <= x; y++)
+			_putchar('#');
+		_putchar('\n');
+	}
 }
+
