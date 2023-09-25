@@ -28,12 +28,10 @@ unsigned int _strspn(char *s, char *accept)
 		}
 
 		if (!found)
-			
-
+			count++;
+		else
 			break;
 
-
-		count++;
 		s++;
 		accept = accept - count;
 	}
