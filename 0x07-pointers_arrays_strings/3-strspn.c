@@ -27,7 +27,7 @@ unsigned int _strspn(char *s, char *accept)
 			accept++;
 		}
 
-		if (!found)
+		if (found)
 			count++;
 		else
 			break;
