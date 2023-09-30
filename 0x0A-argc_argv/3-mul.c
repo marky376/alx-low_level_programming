@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /** main - multiply two numbers
  * @argc: integer
