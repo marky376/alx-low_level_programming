@@ -23,7 +23,7 @@ char *_strdup(char *str)
 	dup_str = malloc(sizeof(char) * (len + 1));
 
 	if (dup_str == NULL)
-		return(NULL);
+		return (NULL);
 
 	for (i = 0; i <= len; i++)
 		dup_str[i] = str[i];
@@ -37,7 +37,8 @@ char *_strdup(char *str)
  * @age: The age of the dog
  * @owner: The owner of the dog
  *
- * Return: A pointer to the newly created dog success of NULL in case of failure
+ * Return: A pointer to the newly created dog success
+ * of NULL in case of failure
  */
 
 dog_t *new_dog(char *name, float age, char *owner)
