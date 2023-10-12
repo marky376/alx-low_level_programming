@@ -4,8 +4,8 @@
 #include <stdlib.h>
 
 /**
- * separator - the string to be printed between numbers
  * print_numbers - prints the numbers in a function
+ * separator - the string to be printed between numbers
  * @n: the number of integers passed to the function
  * @separator: separates numbers in a function
  *
