@@ -5,7 +5,9 @@
 
 /**
  * separator - the string to be printed between numbers
+ * print_numbers - prints the numbers in a function
  * @n: the number of integers passed to the function
+ * @separator: separates numbers in a function
  *
  * Return: prints numbers followed by a new line
  */
@@ -16,8 +18,8 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	unsigned int i;
 
 	va_list args;
-	va_start(args, n);
 
+	va_start(args, n);
 
 	if (separator == NULL)
 	{
