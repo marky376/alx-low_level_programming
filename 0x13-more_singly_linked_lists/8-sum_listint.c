@@ -3,7 +3,7 @@
 #include <stdlib.h>
 
 /**
- * sum_listint - function that prints out the sum 
+ * sum_listint - function that prints out the sum
  * of all the n values in the list
  * @head: the head pointer to the given list
  *
