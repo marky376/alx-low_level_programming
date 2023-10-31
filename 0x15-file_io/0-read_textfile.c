@@ -21,8 +21,8 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	fptr = open(filename, O_RDONLY);
 
 	if (fptr == -1)
-	{	
-		free(buffer);	
+	{
+		free(buffer);
 		return (0);
 	}
 
@@ -51,10 +51,10 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	bwrite = write(STDOUT_FILENO, buffer, bread);
 	if (bwrite == -1 || bwrite != bread)
 	{
-		free(buffer);
 		close(fptr);
 		return (0);
 	}
+
 	free(buffer);
 	close(fptr);
 
