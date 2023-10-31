@@ -4,7 +4,7 @@
  * create_file - function that creates a file with certain permissions
  * @filename: name of the file
  * @text_content: A null terminated string to write to the file
- * 
+ *
  * Return: 1 on success and -1 on failure
  */
 
