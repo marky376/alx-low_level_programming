@@ -1,9 +1,11 @@
 #include <stdio.h>
 
 /**
- * main - printing the size of data types
+ * main - Entry point of the program
  *
- * Return: 0
+ * This function prints the size of various data types in bytes.
+ *
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
