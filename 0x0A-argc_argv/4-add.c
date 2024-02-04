@@ -2,11 +2,12 @@
 #include <stdlib.h>
 #include <ctype.h>
 #include <string.h>
+
 /**
- * check_num function - check - string there are digit
- * @str: array str
+ * check_num - checks if a string contains only digits
+ * @str: the string to check
  *
- * Return: Always 0 (Success)
+ * Return: 1 if the string contains only digits, 0 otherwise
  */
 int check_num(char *str)
 {
@@ -14,7 +15,6 @@ int check_num(char *str)
 
 	count = 0;
 	while (count < strlen(str))
-
 	{
 		if (!isdigit(str[count]))
 		{
@@ -25,17 +25,15 @@ int check_num(char *str)
 	}
 	return (1);
 }
+
 /**
- * main - Print t
- * main function - Print the name of the program
- * @argc: Count arguments
- * @argv: Arguments
+ * main - entry point of the program
+ * @argc: the number of command-line arguments
+ * @argv: an array of strings containing the command-line arguments
  *
- * Return: Always 0 (Success)
+ * Return: 0 on success, 1 on error
  */
-
 int main(int argc, char *argv[])
-
 {
 	int count;
 	int str_to_int;
@@ -45,7 +43,6 @@ int main(int argc, char *argv[])
 	while (count < argc)
 	{
 		if (check_num(argv[count]))
-
 		{
 			str_to_int = atoi(argv[count]);
 			sum += str_to_int;
@@ -57,7 +54,7 @@ int main(int argc, char *argv[])
 		}
 		count++;
 	}
-	
+
 	printf("%d\n", sum);
 
 	return (0);
