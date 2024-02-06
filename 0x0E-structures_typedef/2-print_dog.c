@@ -3,10 +3,12 @@
 #include <stdlib.h>
 
 /**
- * print_dog - print dog
- * @d: dog to print
+ * print_dog - Prints the details of a dog.
+ * @d: A pointer to the dog structure to be printed.
+ *
+ * Description: This function prints the name, age, and owner of a dog.
+ * If any of the fields are NULL, it prints "(nil)" instead.
  */
-
 void print_dog(struct dog *d)
 {
 	if (d != NULL)
