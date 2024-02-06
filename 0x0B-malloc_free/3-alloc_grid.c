@@ -1,3 +1,13 @@
+/**
+ * alloc_grid - Allocate a 2D array of integers
+ * @width: Width of the given grid
+ * @height: Height of the given grid
+ *
+ * This function allocates a 2D array of integers with the specified width and height.
+ * The grid is initialized with all elements set to 0.
+ *
+ * Return: A pointer to the allocated grid, or NULL in case of failure
+ */
 #include <stdio.h>
 #include <stdlib.h>
 #include "main.h"
@@ -50,5 +60,6 @@ int **alloc_grid(int width, int height)
 
 
 	return (grid);
-}
+// Remove the closing brace that is causing the "expected a declaration" error
+// }
 
