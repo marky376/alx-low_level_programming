@@ -1,23 +1,21 @@
-
 #include <stdio.h>
+
 /**
- * main -main function
+ * main - main function
  *
- * Return:always 0
+ * Return: always 0
  */
-
-
 int main(void)
 {
-    char i  = 'a';
+    char i  = 'a'; // Initialize variable i with the value 'a'
 
-    while (i <= 'z')
+    while (i <= 'z') // Loop through the alphabet from 'a' to 'z'
     {
-        putchar(i);
-        i++;
+        putchar(i); // Print the current character
+        i++; // Increment i to move to the next character
     }
 
-    putchar('\n');
+    putchar('\n'); // Print a new line after printing the alphabet
 
-    return 0;
+    return 0; // Return 0 to indicate successful execution
 }
