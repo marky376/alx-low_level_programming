@@ -1,3 +1,16 @@
+/**
+ * int_index - Returns the index of the first element in an array that matches a condition.
+ * @array: The array of integers.
+ * @size: The size of the array.
+ * @cmp: A pointer to the function that compares integers.
+ *
+ * This function searches for an integer in the given array by applying the comparison function
+ * to each element. It returns the index of the first element for which the comparison function
+ * returns a non-zero value.
+ *
+ * Return: The index of the first matching element, or -1 if no match is found or if the size is
+ *         less than or equal to zero.
+ */
 #include <stdio.h>
 /**
  * int_index - the index of integers in an integer
