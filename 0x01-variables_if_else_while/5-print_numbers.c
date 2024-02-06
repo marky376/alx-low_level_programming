@@ -1,15 +1,19 @@
 #include<stdio.h>
+
 /**
- * main- main function
+ * main - Entry point of the program
  *
- * Return:always 0
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
 	int i;
 
+	// Loop through numbers from 0 to 9
 	for (i = 0; i < 10; i++)
 		printf("%d", i);
+
 	printf("\n");
+
 	return (0);
 }
