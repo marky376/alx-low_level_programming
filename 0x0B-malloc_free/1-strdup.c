@@ -1,3 +1,9 @@
+/**
+ * _strdup - Duplicates a certain string
+ * @str: The string to duplicate
+ *
+ * Return: A pointer to the duplicated string, or NULL if str is NULL
+ */
 #include <stdio.h>
 #include <stdlib.h>
 #include "main.h"
