@@ -6,13 +6,10 @@
  *
  * Return: The number of words in the string.
  */
-
 int word_count(char *str)
 {
 	int count = 0;
 	int in_word = 0;
-	char word;
-	int num_words;
 
 	while (*str)
 	{
@@ -29,29 +26,29 @@ int word_count(char *str)
 		str++;
 	}
 
-	return (count);
+	return count;
 }
 
 /**
  * strtow - Splits a string into words
  * @str: The input string
  *
- * Return: A pointer to an array of strings, or NuULL on fail
+ * Return: A pointer to an array of strings, or NULL on fail
  */
-
 char **strtow(char *str)
 {
 	if (str == NULL || *str == '\0')
-		return (NULL);
-	num_words = word_count(str);
+		return NULL;
+
+	int num_words = word_count(str);
 
 	if (num_words == 0)
-		return (NULL);
+		return NULL;
 
-	words = malloc((num_words + 1) * sizeof(char *));
+	char **words = malloc((num_words + 1) * sizeof(char *));
 
 	if (words == NULL)
-		return (NULL);
+		return NULL;
 
 	int i = 0;
 	int in_word = 0;
@@ -77,13 +74,14 @@ char **strtow(char *str)
 
 		str++;
 	}
+
 	if (in_word == 1)
 	{
-		word[i] = start;
+		words[i] = start;
 		i++;
 	}
-	word[i] = NULL;
 
-	return (words);
+	words[i] = NULL;
 
+	return words;
 }
