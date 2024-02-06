@@ -1,3 +1,15 @@
+/**
+ * str_concat - Concatenates two given strings
+ * @s1: The first string
+ * @s2: The second string
+ *
+ * This function takes two strings, s1 and s2, and concatenates them into a new string.
+ * It allocates memory for the new string and returns a pointer to it.
+ * If memory allocation fails, it returns NULL.
+ *
+ * Return: A pointer to a newly allocated string containing s1 followed by s2,
+ *         or NULL if memory allocation fails.
+ */
 #include <stdio.h>
 #include <stdlib.h>
 #include "main.h"
