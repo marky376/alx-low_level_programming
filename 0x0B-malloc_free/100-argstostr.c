@@ -1,3 +1,11 @@
+/**
+ * argstostr - Concatenates all the arguments into a single string.
+ * @ac: The number of arguments.
+ * @av: An array of strings containing the arguments.
+ *
+ * Return: On success, a pointer to the concatenated string.
+ *         On failure, NULL.
+ */
 #include <stdlib.h>
 #include <string.h>
 
