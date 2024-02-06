@@ -1,3 +1,20 @@
+/**
+ * _strdup - Duplicates a string in memory
+ * @str: The string to duplicate
+ *
+ * Return: A pointer to the duplicated string on success,
+ *         or NULL if str is NULL or if memory allocation fails.
+ */
+
+/**
+ * new_dog - Creates a new dog
+ * @name: The name of the dog
+ * @age: The age of the dog
+ * @owner: The owner of the dog
+ *
+ * Return: A pointer to the newly created dog on success,
+ *         or NULL if memory allocation fails.
+ */
 #include "dog.h"
 #include <stdio.h>
 #include <stdlib.h>
