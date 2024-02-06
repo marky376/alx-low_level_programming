@@ -1,7 +1,3 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include "main.h"
-
 /**
  * string_nconcat - Concatenates two given strings.
  * @s1: The first string
