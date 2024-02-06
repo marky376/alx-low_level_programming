@@ -1,15 +1,21 @@
 #include<stdio.h>
+
 /**
- * main - main function
+ * main - Entry point of the program
  *
- * Return:always 0
+ * This function prints the lowercase alphabet in reverse order.
+ *
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
 	char i;
 
-	for (i = 'a'; i >= 'z'; i--)
+	// Loop through the lowercase alphabet in reverse order
+	for (i = 'z'; i >= 'a'; i--)
 		putchar(i);
+
 	putchar('\n');
+
 	return (0);
 }
