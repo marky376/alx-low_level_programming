@@ -7,7 +7,7 @@
  * Return: A pointer to the modified string
  */
 
-char *cap_string(char *)
+char *cap_string(char *str)
 {
 	int i = 0;
 	int capitalize = 1; 
@@ -15,13 +15,13 @@ char *cap_string(char *)
 	while (str[i] != '\0')
 	{
 		/* Checks if the current character is a separator*/
-		if (str[i] == '' || str[i] == '\t' || str[i] == '\n' || str[i] == ',' ||
-			       	str[i] == ';' || str[i] == '.' || str[i] == '!' || str[i] == '?' ||
-			       	str[i] == '"' || str[i] == '(' || str[i] == ')' || str[i] == '{' ||
-			       	str[i] == '}')
-			{
-				capitalize = 1; /* Set the flag to capitalizethe next character*/
-			}
+		if (str[i] == ' ' || str[i] == '\t' || str[i] == '\n' || str[i] == ',' ||
+			str[i] == ';' || str[i] == '.' || str[i] == '!' || str[i] == '?' ||
+			str[i] == '"' || str[i] == '(' || str[i] == ')' || str[i] == '{' ||
+			str[i] == '}')
+		{
+			capitalize = 1; /* Set the flag to capitalize the next character*/
+		}
 		else if (capitalize)
 		{
 			/* Checks if the current character is a lowercase letter*/
