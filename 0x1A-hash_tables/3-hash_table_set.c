@@ -1,3 +1,10 @@
+/**
+ * hash_table_set - function that adds an element to the hash table
+ * @ht: pointer to a hash table
+ * @key: constant string
+ * @value: constant string
+ * Return: 1 if successful, 0 otherwise
+ */
 #include "hash_tables.h"
 
 /**
