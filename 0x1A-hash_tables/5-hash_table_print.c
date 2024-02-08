@@ -1,3 +1,10 @@
+/**
+ * hash_table_print - function that prints a hash table
+ * @ht: is the hash table
+ *
+ * This function prints the key-value pairs of a hash table.
+ * If the hash table is NULL, nothing is printed.
+ */
 #include "hash_tables.h"
 
 /**
