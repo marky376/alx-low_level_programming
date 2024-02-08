@@ -1,3 +1,17 @@
+/**
+ * _strncat - concatenates two strings with a specified length
+ * @dest: the destination string
+ * @src: the source string to append
+ * @n: the maximum number of characters to append from src
+ *
+ * This function takes two strings, `dest` and `src`, and appends the characters
+ * from `src` to the end of `dest`. The maximum number of characters to append
+ * is specified by the parameter `n`. If `n` is greater than the length of `src`,
+ * the entire `src` string is appended. The resulting string is then null-terminated
+ * and a pointer to the resulting string `dest` is returned.
+ *
+ * Return: a pointer to the resulting string `dest`
+ */
 #include "main.h"
 
 /**
