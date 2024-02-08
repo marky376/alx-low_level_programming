@@ -1,3 +1,13 @@
+/**
+ * hash_table_create - function that creates a hash table
+ * @size: unsigned long integer representing the size of the hash table
+ *
+ * This function creates a hash table of the specified size and initializes
+ * all elements of the hash table to NULL.
+ *
+ * Return: On success, returns a pointer to the newly created hash table.
+ *         On failure, returns NULL.
+ */
 #include "hash_tables.h"
 
 /**
