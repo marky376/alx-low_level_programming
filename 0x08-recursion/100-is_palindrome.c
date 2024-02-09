@@ -1,10 +1,11 @@
-#include "main.h"
-#include <string.h>
-
-int is_palindrome_helper(char *s, int start, int end);
 /**
  * is_palindrome - Checks if a string is a palindrome
  * @s: The string to check
+ * 
+ * This function checks if a given string is a palindrome. 
+ * A palindrome is a word, phrase, number, or other sequence of characters 
+ * that reads the same forward and backward.
+ * 
  * Return: 1 if s is a palindrome, 0 otherwise
  */
 
@@ -22,6 +23,11 @@ int is_palindrome(char *s)
  * @s: The string to check
  * @start: The start index of the current comparison
  * @end: The end index of the current comparison
+ * 
+ * This function is a helper function for is_palindrome. It recursively checks 
+ * if a given string is a palindrome by comparing characters from both ends 
+ * towards the middle.
+ * 
  * Return: 1 if s is a palindrome, 0 otherwise
  */
 
