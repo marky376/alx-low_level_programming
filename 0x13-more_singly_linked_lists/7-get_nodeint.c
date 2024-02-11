@@ -1,3 +1,13 @@
+/**
+ * get_nodeint_at_index - function that returns the nth node in a linked list
+ * @head: pointer to the head of the linked list
+ * @index: index of the node to be returned
+ *
+ * This function traverses the linked list starting from the head node and returns
+ * the node at the specified index. If the index is out of range, it returns NULL.
+ *
+ * Return: pointer to the nth node, or NULL if the index is out of range
+ */
 #include "lists.h"
 #include <stdio.h>
 #include <stdlib.h>
