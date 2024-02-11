@@ -7,6 +7,10 @@
  * @head: the head pointer to the given list
  */
 
+// This function frees a linked list by iterating through each node and freeing the memory.
+// It also sets the head pointer to NULL to indicate that the list is empty.
+// @head: The head pointer to the given list.
+
 void free_listint2(listint_t **head)
 {
 	listint_t *normal;
