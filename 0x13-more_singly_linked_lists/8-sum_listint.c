@@ -1,3 +1,9 @@
+/**
+ * sum_listint - function that calculates the sum of all the n values in a linked list
+ * @head: pointer to the head of the linked list
+ *
+ * Return: the sum of all the n values in the linked list
+ */
 #include "lists.h"
 #include <stdio.h>
 #include <stdlib.h>
