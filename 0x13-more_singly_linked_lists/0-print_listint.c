@@ -1,3 +1,12 @@
+/**
+ * print_listint - function that prints the elements of a linked list
+ * @h: pointer to the head of the list
+ *
+ * This function traverses the linked list starting from the head node
+ * and prints the value of each node.
+ *
+ * Return: the number of nodes in the list
+ */
 #include "lists.h"
 #include <stdio.h>
 #include <stddef.h>
