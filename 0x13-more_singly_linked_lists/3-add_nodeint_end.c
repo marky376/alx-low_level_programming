@@ -7,7 +7,13 @@
  * @head: the head pointer of the list
  * @n: the element to be inserted in the newly created node
  *
- * Return: the newly created node
+ * Description:
+ * This function creates a new node with the given element and adds it at the end
+ * of the linked list pointed to by the head pointer. If the list is empty, the
+ * new node becomes the head of the list.
+ *
+ * Return:
+ * The newly created node.
  */
 
 listint_t *add_nodeint_end(listint_t **head, const int n)
