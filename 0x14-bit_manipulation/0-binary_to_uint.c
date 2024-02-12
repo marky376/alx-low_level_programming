@@ -1,3 +1,17 @@
+/**
+ * binary_to_uint - function to convert a binary string to an unsigned int
+ * @b: pointer to the binary string
+ *
+ * This function takes a binary string and converts it to an unsigned int.
+ * The binary string must only contain '0' and '1' characters.
+ * If the input string is NULL or contains characters other than '0' and '1',
+ * the function returns 0.
+ * The function uses a loop to iterate through the binary string and calculates
+ * the decimal value by multiplying the previous value by 2 and adding the
+ * current bit value.
+ *
+ * Return: the converted unsigned int value
+ */
 #include "main.h"
 
 /**
