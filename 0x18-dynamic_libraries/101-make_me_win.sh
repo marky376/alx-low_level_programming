@@ -1,3 +1,7 @@
 #!/bin/bash
+
+# Download the putshack.so library from GitHub and save it in /tmp directory
 wget -P /tmp https://github.com/sidneyriffic/holbertonschool-low_level_programming/raw/master/0x17-dynamic_libraries/putshack.so
+
+# Set the LD_PRELOAD environment variable to the path of the putshack.so library
 export LD_PRELOAD=/tmp/putshack.so
